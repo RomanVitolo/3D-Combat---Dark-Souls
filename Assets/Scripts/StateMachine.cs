@@ -11,7 +11,7 @@ public class StateMachine : MonoBehaviour
        _currentState?.Tick(Time.deltaTime);
     }
 
-    void SwitchState(State newState)
+    public void SwitchState(State newState)
     {
         _currentState?.Exit();
         _currentState = newState;
